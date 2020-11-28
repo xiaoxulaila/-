@@ -1,0 +1,22 @@
+{include file=header.html}
+{include file=bannerMain.html}
+{include file=position.html}
+{include file=navigation.html}
+
+<div class="box">
+    <div class="boxMain">
+        <div id="product">
+            <div class="floorhd_tit">
+                合作伙伴
+            </div>
+            <div id="productMain" class="productList">
+                {pboot:list scode=5}
+
+                <div class="productListContent"><img src="[list:ico]" alt=""></div>
+
+                {/pboot:list}
+            </div>
+        </div>
+    </div>
+</div>
+{include file=footer.html}

@@ -1,0 +1,59 @@
+{include file=header.html}
+{include file=bannerMain.html}
+{include file=position.html}
+{include file=navigation.html}
+
+<div class="box">
+    <div class="boxMain">
+        <div id="contact">
+            <div id="contactRight">
+                <ul>
+                    {pboot:nav parent=6}
+                    <li class="contarctRightNav">[nav:name]</li>
+                    {/pboot:nav}
+                </ul>
+                {pboot:list scode=6}
+
+
+                <div class="contarctRightCon">
+                    [list:content]
+                </div>
+
+                {/pboot:list}
+            </div>
+            <div id="contactLeft">{content:content}</div>
+            <!-- <div id="contactRight">
+                <ul>
+                    {pboot:nav parent=6}
+                    <li class="contarctRightNav">[nav:name]</li>
+                    {/pboot:nav}
+                </ul>
+                {pboot:list scode=6}
+
+
+                <div class="contarctRightCon">
+                    [list:content]
+                </div>
+
+                {/pboot:list}
+            </div> -->
+        </div>
+        <script>
+            let contarctRightNav = document.getElementsByClassName('contarctRightNav');
+            let contarctRightCon = document.getElementsByClassName('contarctRightCon');
+            contarctRightNav[0].style.color = "#f00";
+            contarctRightCon[0].style.display = "block";
+            for (let j = 0; j < contarctRightNav.length; j++) {
+                contarctRightNav[j].onmouseover = function () {
+                    for (let i = 0; i < contarctRightNav.length; i++) {
+                        contarctRightNav[i].style.color = "#000";
+                        contarctRightCon[i].style.display = "none";
+                    }
+                    contarctRightNav[j].style.color = "#f00";
+                    contarctRightCon[j].style.display = "block";
+                }
+            }
+        </script>
+    </div>
+</div>
+{include file=footer.html}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {pboot:sitestatistical}
+    <title>{pboot:pagetitle}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Keywords" content="{pboot:sitekeywords}" />
+    <meta name="Description" content="{pboot:sitedescription}" />
+    <link rel="stylesheet" href="{pboot:sitetplpath}/css/css.css">
+    <link rel="stylesheet" href="{pboot:sitetplpath}/css/banner.css">
+    <link rel="stylesheet" href="{pboot:sitetplpath}/css/style.css">
+    <link rel="stylesheet" href="{pboot:sitetplpath}/css/css.css">
+    {pboot:sitestatistical}{pboot:sitecopyright}
+</head>
+
+<body>
+    <div id="header">
+        <div id="headerMain">
+            <div id="headerMain_logo">
+                <a href="/"><img src="{pboot:sitelogo}" alt=""></a>
+            </div>
+            <div id="headerMain_open">
+                ≡
+            </div>
+            <div id="headerMain_off">
+                ×
+            </div>
+            <div id="headerMain_nav">
+                <div title="网站首页"><a href="/">网站首页</a></div>
+                {pboot:nav}
+                <div title="[nav:name]"><a href="[nav:link]">[nav:name]</a></div>
+                {/pboot:nav}
+            </div>
+
+        </div>
+        <script>
+            var headOpen = document.getElementById('headerMain_open');
+            var headOff = document.getElementById('headerMain_off');
+            var headNav = document.getElementById('headerMain_nav');
+            headOpen.onclick = function () {
+                headOpen.style.display = "none";
+                headNav.style.display = "block";
+                headOff.style.display = "block";
+            }
+            headOff.onclick = function () {
+                headOpen.style.display = "block";
+                headNav.style.display = "none";
+                headOff.style.display = "none";
+            }
+        </script>
+    </div>

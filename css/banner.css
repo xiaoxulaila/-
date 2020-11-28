@@ -1,0 +1,154 @@
+#wrap {
+    width: 100%;
+    height: auto;
+    position: relative;
+    cursor: pointer;
+    list-style: none;
+}
+
+#pic {
+    padding: 0px;
+}
+
+#wrap a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#pic li {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+
+#num {
+    position: absolute;
+    z-index: 2;
+    bottom: 40px;
+    width: 90%;
+    list-style: none;
+}
+
+#numMain {
+    width: 100px;
+    height: 50px;
+    margin: auto;
+}
+
+#num li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+    line-height: 20px;
+    background: transparent;
+    text-align: center;
+    list-style: none;
+}
+
+#num li.active {
+    background: #fefefe;
+}
+
+.arrow {
+    z-index: 3;
+    height: 40px;
+    width: 30px;
+    position: absolute;
+    top: 45%;
+    line-height: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: none;
+}
+
+#wrap:hover .arrow {
+    display: block;
+}
+
+.arrow:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+
+#left {
+    left: 0;
+}
+
+#right {
+    right: 0;
+}
+
+#wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media (max-width: 2560px) {
+    #wrap {
+        height: 1000px;
+    }
+
+    #pic {
+        height: 1000px;
+    }
+}
+
+@media (max-width: 1920px) {
+    #wrap {
+        height: 800px;
+    }
+
+    #pic {
+        height: 800px;
+    }
+}
+
+@media (max-width: 1366px) {
+    #wrap {
+        height: 600px;
+    }
+
+    #pic {
+        height: 600px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #wrap {
+        height: 500px;
+    }
+
+    #pic {
+        height: 500px;
+    }
+}
+
+@media (max-width: 790px) {
+    #wrap {
+        height: 400px;
+    }
+
+    #pic {
+        height: 400px;
+    }
+}
+
+@media (max-width: 420px) {
+    #wrap {
+        height: 250px;
+    }
+
+    #pic {
+        height: 250px;
+    }
+}

@@ -1,0 +1,27 @@
+{include file=header.html}
+{include file=bannerMain.html}
+{include file=position.html}
+{include file=navigation.html}
+
+<div class="box">
+    <div class="boxMain">
+        <div id="new">
+            <div class="floorhd_tit">
+                新闻资讯
+            </div>
+            <div id="newMain">
+                {pboot:list scode=3 num=12 page=1}
+                <a href="[list:link]">
+                    <div class="newMainCon">
+                        <div class="newMainConText">
+                            [list:title]</div>
+                        <div class="newMainConTime">[list:date]</div>
+                    </div>
+                </a>
+                {/pboot:list}
+            </div>
+            <div class="bar">{page:bar}</div>
+        </div>
+    </div>
+</div>
+{include file=footer.html}

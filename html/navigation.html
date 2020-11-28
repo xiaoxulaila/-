@@ -1,0 +1,65 @@
+    <div id="navigation">
+        <div class="navigation_main">
+            <div class="navigation_main_side">{pboot:companyphone}</div>
+            <div class="navigation_main_img" title="联系电话">联系电话</div>
+        </div>
+        <div class="navigation_main">
+            <a href="#" target="_blank">
+                <div class="navigation_main_img" title="联系我们">联系我们</div>
+            </a>
+        </div>
+        <div class="navigation_main">
+            <div class="navigation_main_side">
+                <div><img src="{label:official}" alt=""></div>
+            </div>
+            <div class="navigation_main_img" title="公众号">公众号</div>
+        </div>
+        <div class="navigation_main">
+            <div class="navigation_main_side">
+                <div><img src="{pboot:companyweixin}" alt=""></div>
+            </div>
+            <div class="navigation_main_img" title="微信咨询">微信咨询</div>
+        </div>
+        <div class="navigation_main">
+            <a href="javascript:window.scrollTo( 0, 0 );">
+                <div class="navigation_main_img" title="返回顶部">返回顶部</div>
+            </a>
+        </div>
+    </div>
+    <div id="navigation_bottom">
+        <div id="navigation_bottom_input">在线留言</div>
+        <div id="navigation_bottom_input_close">关闭留言</div>
+        <div id="navigation_bottom_main">
+            <div id="navigation_bottom_main_top">
+                在线留言
+            </div>
+            <div id="navigation_bottom_main_from">
+                <form action="{pboot:msgaction}" method="post" class="navigation_bottom_main_from">
+                    <div>预约姓名：<input type="text" name="contacts" placeholder=" 联系姓名*"></div>
+                    <div>预约电话：<input type="text" name="mobile" placeholder=" 联系电话*"></div>
+                    <div>预约城市：<input type="text" name="city" placeholder=" 请输入地址"></div>
+                    <div>预约留言：<input type="text" name="content" placeholder=" 请输入留言"></div>
+                    <div><button type="submit">提交</button></div>
+                </form>
+            </div>
+            <div id="navigation_bottom_main_bottom">
+                可免费预约量房,获取报价
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var nbb = document.getElementById("navigation_bottom_input");
+        var nbm = document.getElementById("navigation_bottom_main");
+        var nbbc = document.getElementById("navigation_bottom_input_close");
+        nbb.onclick = function a() {
+            nbm.style.display = "block";
+            nbb.style.display = "none";
+            nbbc.style.display = "block";
+        }
+        nbbc.onclick = function a() {
+            nbm.style.display = "none";
+            nbb.style.display = "block";
+            nbbc.style.display = "none";
+        }
+    </script>

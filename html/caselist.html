@@ -1,0 +1,150 @@
+{include file=header.html}
+{include file=bannerMain.html}
+{include file=position.html}
+{include file=navigation.html}
+
+<div class="box">
+    <div class="boxMain">
+        <div id="case">
+            <div class="floorhd_tit">
+                优秀案例
+            </div>
+            <div id="case_nav">
+                <div id="case_nav_list">装修类型</div>
+                <div id="case_nav_con">
+                    {pboot:nav num=8 parent=2}
+                    <div class="case_nav_list">[nav:name]</div>
+                    {/pboot:nav}
+                </div>
+            </div>
+            <div id="caseMain">
+                <div class="caseMain">
+
+                    {pboot:list scode=7}
+                    <a href="[list:link]">
+                        <div class="caseMainContent">
+                            <div class="caseMainContent_img">
+                                <img src="[list:ico]" alt="">
+                            </div>
+                            <div class="caseMainContent_text">[list:title]</div>
+                        </div>
+                    </a>
+                    {/pboot:list}
+                </div>
+                <div class="caseMain">
+                    {pboot:list scode=8}
+                    <a href="[list:link]">
+                        <div class="caseMainContent">
+                            <div class="caseMainContent_img">
+                                <img src="[list:ico]" alt="">
+                            </div>
+                            <div class="caseMainContent_text">[list:title]</div>
+                        </div>
+                    </a>
+                    {/pboot:list}
+                </div>
+                <div class="caseMain">
+                    {pboot:list scode=9}
+                    <a href="[list:link]">
+                        <div class="caseMainContent">
+                            <div class="caseMainContent_img">
+                                <img src="[list:ico]" alt="">
+                            </div>
+                            <div class="caseMainContent_text">[list:title]</div>
+                        </div>
+                    </a>
+                    {/pboot:list}
+                </div>
+                <div class="caseMain">
+                    {pboot:list scode=10}
+                    <a href="[list:link]">
+                        <div class="caseMainContent">
+                            <div class="caseMainContent_img">
+                                <img src="[list:ico]" alt="">
+                            </div>
+                            <div class="caseMainContent_text">[list:title]</div>
+                        </div>
+                    </a>
+                    {/pboot:list}
+                </div>
+                <div class="caseMain">
+                    {pboot:list scode=11}
+                    <a href="[list:link]">
+                        <div class="caseMainContent">
+                            <div class="caseMainContent_img">
+                                <img src="[list:ico]" alt="">
+                            </div>
+                            <div class="caseMainContent_text">[list:title]</div>
+                        </div>
+                    </a>
+                    {/pboot:list}
+                </div>
+                <div class="caseMain">
+                    {pboot:list scode=12}
+                    <a href="[list:link]">
+                        <div class="caseMainContent">
+                            <div class="caseMainContent_img">
+                                <img src="[list:ico]" alt="">
+                            </div>
+                            <div class="caseMainContent_text">[list:title]</div>
+                        </div>
+                    </a>
+                    {/pboot:list}
+                </div>
+                <div class="caseMain">
+                    {pboot:list scode=13}
+                    <a href="[list:link]">
+                        <div class="caseMainContent">
+                            <div class="caseMainContent_img">
+                                <img src="[list:ico]" alt="">
+                            </div>
+                            <div class="caseMainContent_text">[list:title]</div>
+                        </div>
+                    </a>
+                    {/pboot:list}
+                </div>
+                <div class="caseMain">
+                    {pboot:list scode=14}
+                    <a href="[list:link]">
+                        <div class="caseMainContent">
+                            <div class="caseMainContent_img">
+                                <img src="[list:ico]" alt="">
+                            </div>
+                            <div class="caseMainContent_text">[list:title]</div>
+                        </div>
+                    </a>
+                    {/pboot:list}
+                </div>
+                <div class="caseMain">
+                    {pboot:list scode=15}
+                    <a href="[list:link]">
+                        <div class="caseMainContent">
+                            <div class="caseMainContent_img">
+                                <img src="[list:ico]" alt="">
+                            </div>
+                            <div class="caseMainContent_text">[list:title]</div>
+                        </div>
+                    </a>
+                    {/pboot:list}
+                </div>
+            </div>
+        </div>
+        <script>
+            let caseList = document.getElementsByClassName("case_nav_list");
+            let caseMain = document.getElementsByClassName("caseMain");
+            caseMain[0].style.display = "block";
+            caseList[0].style.color = "#f00";
+            for (let j = 0; j < caseList.length; j++) {
+                caseList[j].onmouseover = function () {
+                    for (let i = 0; i < caseList.length; i++) {
+                        caseMain[i].style.display = "none";
+                        caseList[i].style.color = "#000";
+                    }
+                    caseMain[j].style.display = "block";
+                    caseList[j].style.color = "#f00";
+                }
+            }
+        </script>
+    </div>
+</div>
+{include file=footer.html}

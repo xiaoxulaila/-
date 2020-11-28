@@ -1,0 +1,233 @@
+{include file=header.html}
+{include file=banner.html}
+{include file=navigation.html}
+
+<div class="box">
+    <div class="boxMain">
+        <div id="about">
+            {pboot:content id=102}
+            <div class="aboutImg">
+                <img src="[content:ico]" alt="">
+            </div>
+            <div class="aboutText">
+                <div class="aboutText_h1">{pboot:companyname}</div>
+                <div class="aboutText_text">
+                    [content:ext_con]
+                </div>
+                <div class="aboutText_inp"><a href="[content:link]">想要了解更多>></a></div>
+            </div>
+            {/pboot:content}
+        </div>
+    </div>
+</div>
+<div class="box">
+    <div class="boxMain">
+        <div id="case">
+            <div class="floorhd_tit">
+                优秀案例
+            </div>
+            <div id="case_nav">
+                <div id="case_nav_list">装修类型</div>
+                <div id="case_nav_con">
+                    {pboot:nav num=8 parent=2}
+                    <div class="case_nav_list"><a href="[nav:link]">[nav:name]</a></div>
+                    {/pboot:nav}
+                </div>
+            </div>
+            <div id="caseMain">
+                <div class="caseMain">
+
+                    {pboot:list num=8 scode=7}
+                    <a href="[list:link]">
+                        <div class="caseMainContent">
+                            <div class="caseMainContent_img">
+                                <img src="[list:ico]" alt="">
+                            </div>
+                            <div class="caseMainContent_text">[list:title]</div>
+                        </div>
+                    </a>
+                    {/pboot:list}
+                </div>
+                <div class="caseMain">
+                    {pboot:list num=8 scode=8}
+                    <a href="[list:link]">
+                        <div class="caseMainContent">
+                            <div class="caseMainContent_img">
+                                <img src="[list:ico]" alt="">
+                            </div>
+                            <div class="caseMainContent_text">[list:title]</div>
+                        </div>
+                    </a>
+                    {/pboot:list}
+                </div>
+                <div class="caseMain">
+                    {pboot:list num=8 scode=9}
+                    <a href="[list:link]">
+                        <div class="caseMainContent">
+                            <div class="caseMainContent_img">
+                                <img src="[list:ico]" alt="">
+                            </div>
+                            <div class="caseMainContent_text">[list:title]</div>
+                        </div>
+                    </a>
+                    {/pboot:list}
+                </div>
+                <div class="caseMain">
+                    {pboot:list num=8 scode=10}
+                    <a href="[list:link]">
+                        <div class="caseMainContent">
+                            <div class="caseMainContent_img">
+                                <img src="[list:ico]" alt="">
+                            </div>
+                            <div class="caseMainContent_text">[list:title]</div>
+                        </div>
+                    </a>
+                    {/pboot:list}
+                </div>
+                <div class="caseMain">
+                    {pboot:list num=8 scode=11}
+                    <a href="[list:link]">
+                        <div class="caseMainContent">
+                            <div class="caseMainContent_img">
+                                <img src="[list:ico]" alt="">
+                            </div>
+                            <div class="caseMainContent_text">[list:title]</div>
+                        </div>
+                    </a>
+                    {/pboot:list}
+                </div>
+                <div class="caseMain">
+                    {pboot:list num=8 scode=12}
+                    <a href="[list:link]">
+                        <div class="caseMainContent">
+                            <div class="caseMainContent_img">
+                                <img src="[list:ico]" alt="">
+                            </div>
+                            <div class="caseMainContent_text">[list:title]</div>
+                        </div>
+                    </a>
+                    {/pboot:list}
+                </div>
+                <div class="caseMain">
+                    {pboot:list num=8 scode=13}
+                    <a href="[list:link]">
+                        <div class="caseMainContent">
+                            <div class="caseMainContent_img">
+                                <img src="[list:ico]" alt="">
+                            </div>
+                            <div class="caseMainContent_text">[list:title]</div>
+                        </div>
+                    </a>
+                    {/pboot:list}
+                </div>
+                <div class="caseMain">
+                    {pboot:list num=8 scode=14}
+                    <a href="[list:link]">
+                        <div class="caseMainContent">
+                            <div class="caseMainContent_img">
+                                <img src="[list:ico]" alt="">
+                            </div>
+                            <div class="caseMainContent_text">[list:title]</div>
+                        </div>
+                    </a>
+                    {/pboot:list}
+                </div>
+                <div class="caseMain">
+                    {pboot:list num=8 scode=15}
+                    <a href="[list:link]">
+                        <div class="caseMainContent">
+                            <div class="caseMainContent_img">
+                                <img src="[list:ico]" alt="">
+                            </div>
+                            <div class="caseMainContent_text">[list:title]</div>
+                        </div>
+                    </a>
+                    {/pboot:list}
+                </div>
+            </div>
+        </div>
+        <script>
+            let caseList = document.getElementsByClassName("case_nav_list");
+            let caseMain = document.getElementsByClassName("caseMain");
+            caseMain[0].style.display = "block";
+            caseList[0].firstChild.style.color = "#f00";
+            for (let j = 0; j < caseList.length; j++) {
+                caseList[j].onmouseover = function () {
+                    for (let i = 0; i < caseList.length; i++) {
+                        caseMain[i].style.display = "none";
+                        caseList[i].firstChild.style.color = "#000";
+                    }
+                    caseMain[j].style.display = "block";
+                    caseList[j].firstChild.style.color = "#f00";
+                }
+            }
+        </script>
+    </div>
+</div>
+<div class="box">
+    <div class="boxMain">
+        <div id="job">
+            <div class="floorhd_tit">
+                设计团队
+            </div>
+            <div id="jobMain">
+                {pboot:list num=8 scode=4}
+                <a href="[list:link]">
+                    <div class="jobMainContent">
+                        <div class="jobMainContent_img">
+                            <img src="[list:ico]" alt="">
+                        </div>
+                        <div class="jobMainContent_text">[list:title]</div>
+                    </div>
+                </a>
+                {/pboot:list}
+            </div>
+
+            <div class="aboutText_inp"><a href="#">想要了解更多>></a></div>
+
+        </div>
+    </div>
+</div>
+<div class="box">
+    <div class="boxMain">
+        <div id="new">
+            <div class="floorhd_tit">
+                新闻资讯
+            </div>
+            <div id="newMain">
+                {pboot:list num=12 scode=3}
+                <a href="[list:link]">
+                    <div class="newMainCon">
+                        <div class="newMainConText">
+                            [list:title]</div>
+                        <div class="newMainConTime">[list:date]</div>
+                    </div>
+                </a>
+                {/pboot:list}
+            </div>
+            <div class="aboutText_inp"><a href="#">想要了解更多>></a></div>
+
+        </div>
+    </div>
+</div>
+<div class="box">
+    <div class="boxMain">
+        <div id="product">
+            <div class="floorhd_tit">
+                合作伙伴
+            </div>
+            <div id="productMain">
+                {pboot:list num=15 scode=5}
+
+                <div class="productMainContent"><img src="[list:ico]" alt=""></div>
+
+                {/pboot:list}
+            </div>
+            <div class="aboutText_inp"><a href="#">想要了解更多>></a></div>
+
+        </div>
+    </div>
+</div>
+
+
+{include file=footer.html}

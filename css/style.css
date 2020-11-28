@@ -1,0 +1,455 @@
+/* 关于我们页面 */
+#aboutList {
+    width: 100%;
+    height: auto;
+}
+
+#aboutList p {
+    height: auto;
+}
+
+#aboutList img {
+    height: auto;
+}
+
+#aboutList div {
+    height: auto;
+}
+
+#aboutList span {
+    height: auto;
+}
+
+#aboutList h1 {
+    height: auto;
+}
+
+#aboutList h2 {
+    height: auto;
+}
+
+#aboutList h3 {
+    height: auto;
+}
+
+#aboutList h4 {
+    height: auto;
+}
+
+#aboutList h5 {
+    height: auto;
+}
+
+#aboutList h6 {
+    height: auto;
+}
+
+#aboutList br {
+    height: auto;
+}
+
+#aboutListMain {
+    width: 1200px;
+    margin: auto;
+}
+
+
+
+/* 面包屑 */
+#position {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+
+
+/* 联系我们 */
+#contact {
+    width: 100%;
+    height: 500px;
+    margin: 20px 0;
+}
+
+#contactLeft {
+    width: 40%;
+    height: 500px;
+    float: left;
+    border-right: 1px #ccc dotted;
+}
+
+#contactLeft p {
+    height: auto;
+}
+
+#contactLeft img {
+    height: auto;
+}
+
+#contactLeft div {
+    height: auto;
+}
+
+#contactLeft span {
+    height: auto;
+}
+
+#contactLeft h1 {
+    height: auto;
+}
+
+#contactLeft h2 {
+    height: auto;
+}
+
+#contactLeft h3 {
+    height: auto;
+}
+
+#contactLeft h4 {
+    height: auto;
+}
+
+#contactLeft h5 {
+    height: auto;
+}
+
+#contactLeft h6 {
+    height: auto;
+}
+
+#contactLeft br {
+    height: auto;
+}
+
+#contactLeftMain {
+    width: 1200px;
+    margin: auto;
+}
+
+
+
+
+
+
+
+#contactRight {
+    width: 59%;
+    height: 500px;
+    float: right;
+}
+
+#contactRight ul {
+    list-style-type: none;
+    width: 100%;
+    height: 40px;
+    border-bottom: #ccc 1px solid;
+}
+
+.contarctRightNav {
+    width: 20%;
+    height: 40px;
+    float: left;
+    text-align: center;
+}
+
+.contarctRightCon {
+    width: 100%;
+    height: 400px;
+    display: none;
+}
+
+.contarctRightCon p {
+    height: auto;
+}
+
+.contarctRightCon img {
+    height: auto;
+}
+
+.contarctRightCon div {
+    height: auto;
+}
+
+.contarctRightCon span {
+    height: auto;
+}
+
+.contarctRightCon h1 {
+    height: auto;
+}
+
+.contarctRightCon h2 {
+    height: auto;
+}
+
+.contarctRightCon h3 {
+    height: auto;
+}
+
+.contarctRightCon h4 {
+    height: auto;
+}
+
+.contarctRightCon h5 {
+    height: auto;
+}
+
+.contarctRightCon h6 {
+    height: auto;
+}
+
+.contarctRightCon br {
+    height: auto;
+}
+
+.contarctRightConMain {
+    width: 1200px;
+    margin: auto;
+}
+
+
+
+
+
+/* 合作伙伴 */
+.productList {
+    overflow: auto;
+}
+
+.productListContent {
+    width: 23%;
+    height: 150px;
+    margin: 9px;
+    text-align: center;
+    float: left;
+}
+
+.productListContent img {
+    width: auto;
+    height: 150px;
+}
+
+.productList::-webkit-scrollbar {
+    display: none;
+}
+
+.productList:hover::-webkit-scrollbar {
+    display: block;
+}
+
+.productList::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.productList::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+/* 团队展示 */
+.job {
+    width: 100%;
+    height: auto;
+}
+
+.jobMain {
+    width: 100%;
+    height: auto;
+}
+
+.jobMain:after {
+    content: '';
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+
+#jobMainImg {
+    width: 30%;
+    height: 300px;
+    text-align: center;
+    float: left;
+}
+
+#jobMainImg img {
+    width: auto;
+    height: 300px;
+}
+
+#jobMainCon {
+    width: 70%;
+    height: 300px;
+    float: right;
+}
+
+.jobMainConTop {
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+.jobMainConTop span {
+    padding: 0 20px;
+    font-size: 1.5rem;
+}
+
+.jobMainConCon {
+    padding-left: 20px;
+    margin: 5px 0;
+}
+
+.jobMainConCon span {
+    color: #ccc;
+}
+
+
+
+
+
+
+/* 案例展示子页面 */
+#caseList {
+    width: 100%;
+    height: auto;
+}
+
+#caseMain {
+    width: 100%;
+    height: auto;
+}
+
+#caseMain:after {
+    content: '';
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+
+#caseMainLeft {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+.caseMainLeftImg {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.caseMainLeftImg img {
+    width: auto;
+    height: 500px;
+    text-align: center;
+}
+
+.caseMainLeftImg button {
+    width: 200px;
+    height: 100%;
+    border: 0;
+    background: none;
+    font-size: 5rem;
+    position: absolute;
+    top: 0;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.caseMainLeftImg button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.caseMainLeftImg button:active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgba(0, 0, 0, 0.5);
+    border: 0;
+    background-color: (255, 255, 255, 0);
+}
+
+#caseForwardBut {
+    right: 0;
+}
+
+#caseBackwardBut {
+    left: 0;
+}
+
+
+.caseMainLeftMinImg {
+    width: 100%;
+    height: 150px;
+    background-color: #f4f4f4;
+    overflow: auto;
+}
+
+.caseMainLeftMinImg ul {
+    width: 200%;
+    height: 100%;
+    list-style: none;
+}
+
+.caseMainLeftMinImg ul li {
+    width: 150px;
+    height: 100px;
+    float: left;
+    overflow: hidden;
+    border: #ccc 2px solid;
+    margin: 10px;
+    text-align: center;
+}
+
+.caseMainLeftMinImg ul li img {
+    width: auto;
+    height: 100%;
+}
+
+.caseMainLeftMinImgLi:hover {
+    border: #000 2px solid;
+    ;
+}
+
+
+
+
+
+
+#caseMainRight {
+    width: 50%;
+    height: auto;
+    float: right;
+}
+
+.caseMainRight_h1 {
+    width: auto;
+    margin-left: 20px;
+}
+
+.caseMainRight_h1 span {
+    padding-right: 20px;
+    padding-bottom: 2px;
+    border-bottom: solid 2px #666;
+}
+
+.caseMainRight_h1 span span {
+    font-size: 22px;
+    border: 0px;
+}
+
+
+.caseMainRight_h5 {
+    margin-left: 30px;
+    margin-top: 10px;
+}

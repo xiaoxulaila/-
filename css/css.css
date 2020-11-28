@@ -1,0 +1,1196 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 公共外框 */
+.box {
+    width: 100%;
+    height: auto;
+}
+
+.boxMain {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+}
+
+
+
+
+
+/* 公共头部 */
+.floorhd_tit {
+    width: 150px;
+    height: 45px;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 30px;
+    margin: auto;
+}
+
+.floorhd_tit::before {
+    background-image: url(../images/sprite.png);
+}
+
+
+/* 上下页 */
+.precon {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+}
+
+.precon div {
+    width: 100%;
+    height: auto;
+}
+
+
+/* 分页条 */
+.bar {
+    width: 500px;
+    height: 50px;
+    margin: auto;
+}
+
+.bar a {
+    text-decoration: none;
+}
+
+.page-index {
+    margin: 5px;
+    padding: 5px;
+    border: #ccc 1px solid;
+}
+
+.page-pre,
+.page-num,
+.page-num-current,
+.page-next,
+.page-last {
+    margin: 5px;
+    padding: 5px;
+    border: #ccc 1px solid;
+}
+
+
+
+
+
+/* 头部文件 */
+#header {
+    width: 100%;
+    height: 80px;
+    box-shadow: -1px 10px 20px #ccc;
+}
+
+#headerMain {
+    width: 1200px;
+    height: auto;
+    margin: 10px auto;
+}
+
+#headerMain_logo {
+    width: 30%;
+    height: auto;
+    float: left;
+}
+
+#headerMain_logo img {
+    width: auto;
+    height: 60px;
+}
+
+#headerMain_nav {
+    width: 70%;
+    height: auto;
+    float: right;
+}
+
+#headerMain_nav div {
+    width: 14%;
+    height: 60px;
+    float: left;
+    line-height: 60px;
+    text-align: center;
+
+}
+
+#headerMain_nav div a:hover {
+    border-bottom: 2px #f00 solid;
+}
+
+#headerMain_nav div a {
+    color: #000;
+    text-decoration: none;
+    padding-bottom: 10px;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+
+#headerMain_open {
+    width: 30%;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    display: none;
+    font-size: 4rem;
+    float: right;
+}
+
+#headerMain_off {
+    width: 30%;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    display: none;
+    float: right;
+    font-size: 4rem;
+}
+
+
+
+/* 快捷栏目 */
+#navigation {
+    height: auto;
+    padding: 10px;
+    position: fixed;
+    right: 0px;
+    top: 200px;
+    z-index: 100;
+}
+
+.navigation_main {
+    height: 60px;
+    margin: 10px 0px;
+}
+
+.navigation_main_img {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 5px;
+    line-height: 30px;
+    float: right;
+    background-color: #666;
+}
+
+.navigation_main_side {
+    width: auto;
+    height: auto;
+    float: left;
+    background-color: #666;
+    line-height: 40px;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    display: none;
+}
+
+.navigation_main_side div {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+}
+
+.navigation_main_side div img {
+    width: 100px;
+    height: 100px;
+}
+
+.navigation_main:hover .navigation_main_side {
+    display: block;
+}
+
+.navigation_main:hover {
+    width: 200px;
+}
+
+
+
+/* 联系我们 */
+#navigation_bottom {
+    width: auto;
+    min-height: auto;
+}
+
+#navigation_bottom_input {
+    width: 200px;
+    height: 60px;
+    background-color: #666;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 30px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 100;
+    color: #fff;
+}
+
+#navigation_bottom_input_close {
+    width: 200px;
+    height: 60px;
+    background-color: #666;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 30px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 100;
+    color: #fff;
+    display: none;
+}
+
+#navigation_bottom_main {
+    width: 400px;
+    height: 500px;
+    background-color: #666;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    display: none;
+}
+
+#navigation_bottom_main_top {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px #fff solid;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 70px;
+}
+
+#navigation_bottom_main_bottom {
+    width: 100%;
+    height: 50px;
+    border-top: #fff solid 1px;
+    text-align: center;
+    color: #fff;
+    line-height: 30px;
+}
+
+#navigation_bottom_main_from {
+    width: 100%;
+    height: 380px;
+
+}
+
+.navigation_bottom_main_from {
+    width: 100%;
+    height: 360px;
+    margin-top: 20px;
+}
+
+.navigation_bottom_main_from div {
+    width: 80%;
+    height: 70px;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+}
+
+.navigation_bottom_main_from div input {
+    width: 60%;
+    height: 40px;
+    border-radius: 25px;
+    padding: 1px 15px;
+}
+
+.navigation_bottom_main_from div button {
+    width: 70%;
+    height: 45px;
+    border-radius: 25px;
+    margin: 20px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 页脚部分 */
+.footer {
+    background-color: #303030;
+    color: #fff;
+}
+
+.footer_navber {
+    width: 100%;
+    height: 70px;
+    border-bottom: #ccc 1px solid;
+}
+
+.footer_navber div {
+    width: 14%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 70px;
+    cursor: default;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+
+.footer_navber div a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer_navber div:hover {
+    background-color: #ccc;
+    line-height: 40px;
+}
+
+
+.footer_information {
+    width: 100%;
+    height: auto;
+    padding: 30px 0px;
+}
+
+.footer_information div {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 10px 0px;
+    color: #ccc;
+}
+
+
+
+/* 首页公司介绍部分 */
+#about {
+    width: 100%;
+    height: 350px;
+    padding-top: 50px;
+}
+
+.aboutImg {
+    width: 30%;
+    height: 90%;
+    float: left;
+    margin: 0 5%;
+    background-color: #ccc;
+    overflow: hidden;
+}
+
+.aboutImg img {
+    width: auto;
+    height: 320px;
+}
+
+.aboutText {
+    width: 60%;
+    height: 100%;
+    float: right;
+}
+
+.aboutText_h1 {
+    width: 100%;
+    height: auto;
+    font-size: 22px;
+}
+
+.aboutText_text {
+    width: 100%;
+    height: 200px;
+    padding: 20px 0px;
+    overflow: hidden;
+}
+
+.aboutText_inp {
+    width: 100%;
+    height: auto;
+}
+
+.aboutText_inp a {
+    text-decoration: none;
+    border-bottom: 1px solid #303030;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+
+.aboutText_inp a:hover {
+    padding-right: 20px;
+}
+
+
+
+
+
+
+/* 案例内容 */
+#case {
+    width: 100%;
+    height: auto;
+}
+
+#case_nav {
+    width: 100%;
+    height: 60px;
+    background-color: #F5FFFA;
+    margin-bottom: 10px;
+}
+
+#case_nav_list {
+    width: 85px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    float: left;
+    border: #ccc 1px solid;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #f7f7f7;
+}
+
+#case_nav_con {
+    width: 1050px;
+    height: 100%;
+    float: right;
+}
+
+.case_nav_list {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    float: left;
+    margin-right: 20px;
+}
+
+
+.case_nav_list a {
+    color: #000;
+    text-decoration: none;
+}
+
+#caseMain {
+    width: 100%;
+    height: auto;
+}
+
+.caseMain {
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+    display: none;
+    overflow: hidden;
+}
+
+
+
+/* 案例内容模块 */
+.caseMain a {
+    color: #000;
+    text-decoration: none;
+}
+
+.caseMainContent {
+    width: 290px;
+    height: 250px;
+    background-color: #fff;
+    border: 1px #666 solid;
+    float: left;
+    margin: 4px;
+    transition: all 0.6s;
+}
+
+.caseMainContent_img {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.caseMainContent_img img {
+    width: auto;
+    height: 200px;
+    text-align: center;
+    transition: all 1s;
+}
+
+.caseMainContent_text {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* 案例内容模块点击事件 */
+.caseMainContent:hover img {
+    height: 220px;
+}
+
+.caseMainContent:hover {
+    color: #f00;
+}
+
+
+
+/* 设计团队 */
+#job {
+    width: 100%;
+    height: 700px;
+}
+
+#jobMain {
+    width: 100%;
+    height: 550px;
+    margin-top: 20px;
+}
+
+/* 设计师内容模块 */
+#jobMain a {
+    color: #000;
+    text-decoration: none;
+}
+
+.jobMainContent {
+    width: 290px;
+    height: 250px;
+    background-color: #fff;
+    border: 1px #666 solid;
+    float: left;
+    margin: 4px;
+    transition: all 0.6s;
+    border-radius: 15px;
+}
+
+.jobMainContent_img {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.jobMainContent_img img {
+    width: auto;
+    height: 200px;
+    text-align: center;
+    transition: all 1s;
+}
+
+.jobMainContent_text {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* 设计师内容模块点击事件 */
+.jobMainContent:hover img {
+    height: 220px;
+}
+
+.jobMainContent:hover {
+    color: #f00;
+}
+
+#job .aboutText_inp {
+    text-align: center;
+}
+
+
+
+/* 新闻资讯 */
+#new {
+    width: 100%;
+    height: 650px;
+}
+
+#new a {
+    color: #000;
+    text-decoration: none;
+}
+
+#newMain {
+    width: 100%;
+    height: 500px;
+}
+
+.newMainCon {
+    width: 48%;
+    height: 60px;
+    border-bottom: 1px dotted #ccc;
+    margin: 10px;
+    float: left;
+}
+
+.newMainConText {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    float: left;
+}
+
+.newMainConTime {
+    width: 30%;
+    height: 100%;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+#new .aboutText_inp {
+    text-align: center;
+}
+
+
+
+
+/* 合作伙伴 */
+#product {
+    width: 100%;
+    height: 700px;
+}
+
+#productMain {
+    width: 100%;
+    height: 500px;
+}
+
+.productMainContent {
+    width: 220px;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+    float: left;
+}
+
+.productMainContent img {
+    width: auto;
+    height: 150px;
+}
+
+#product .aboutText_inp {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+
+    /* 公共头部文字 */
+    .floorhd_tit {
+        width: 350px;
+        font-size: 2.5rem;
+    }
+
+    /* 导航栏 */
+    #headerMain {
+        width: 800px;
+    }
+
+    /* 外部包裹盒子 */
+    .boxMain {
+        width: 800px;
+    }
+
+    /* 关于我们 */
+    .aboutText_h1 {
+        font-size: 2rem;
+    }
+
+    .aboutText_text {
+        font-size: 1.5rem;
+    }
+
+
+
+    /* 优秀案例 */
+    #case {
+        width: 100%;
+        height: auto;
+    }
+
+    #case_nav_con {
+        width: 660px;
+        height: 60px;
+        overflow: auto;
+    }
+
+    .caseMainContent_text {
+        font-size: 2rem;
+    }
+
+    .caseMainContent {
+        width: 390px;
+    }
+
+    .case_nav_list {
+        width: auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        float: left;
+        font-size: 1.5rem;
+        margin-right: 20px;
+    }
+
+    /* 设计师团队 */
+    #job {
+        height: 1250px;
+    }
+
+    #jobMain {
+        height: 1100px;
+    }
+
+    .jobMainContent {
+        width: 390px;
+    }
+
+    .jobMainContent_text {
+        font-size: 2rem;
+        overflow: hidden;
+    }
+
+
+    /* 新闻 */
+    #new {
+        height: 1150px;
+    }
+
+    #newMain {
+        height: 1000px;
+    }
+
+    .newMainCon {
+        width: 100%;
+        height: 60px;
+        margin: 10px 0px;
+    }
+
+
+    /* 合作伙伴 */
+    #product {
+        height: 1050px;
+    }
+
+    #productMain {
+        height: 900px;
+    }
+
+    .productMainContent {
+        width: 240px;
+    }
+
+
+    /* 关于我们页面 */
+    #aboutListMain {
+        width: 85%;
+    }
+
+    /* 合作伙伴页面 */
+    .productListContent {
+        width: 22%;
+    }
+
+
+
+
+    /* 联系我们页面 */
+    #contact {
+        height: 1000px;
+    }
+
+    #contactRight {
+        width: 100%;
+        float: none;
+    }
+
+    #contactLeft {
+        width: 100%;
+        float: none;
+    }
+
+}
+
+@media (max-width: 790px) {
+
+    /* 公共头部文字 */
+    .floorhd_tit {
+        width: 350px;
+        font-size: 2.5rem;
+    }
+
+    /* 导航栏 */
+    #headerMain {
+        width: 750px;
+    }
+
+    /* 外部包裹盒子 */
+    .boxMain {
+        width: 750px;
+    }
+
+    /* 关于我们 */
+    .aboutText_h1 {
+        font-size: 2rem;
+    }
+
+    .aboutText_text {
+        font-size: 1.5rem;
+    }
+
+
+
+    /* 优秀案例 */
+    #case {
+        width: 100%;
+        height: auto;
+    }
+
+    #case_nav_con {
+        width: 600px;
+        height: 60px;
+        overflow: auto;
+    }
+
+    .caseMainContent_text {
+        font-size: 2rem;
+    }
+
+    .caseMainContent {
+        width: 365px;
+    }
+
+    .case_nav_list {
+        width: auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        float: left;
+        font-size: 1.5rem;
+        margin-right: 20px;
+    }
+
+    /* 设计师团队 */
+    #job {
+        height: 1250px;
+    }
+
+    #jobMain {
+        height: 1100px;
+    }
+
+    .jobMainContent {
+        width: 365px;
+    }
+
+    .jobMainContent_text {
+        font-size: 2rem;
+        overflow: hidden;
+    }
+
+
+    /* 新闻 */
+    #new {
+        height: 1150px;
+    }
+
+    #newMain {
+        height: 1000px;
+    }
+
+    .newMainCon {
+        width: 100%;
+        height: 60px;
+        margin: 10px 0px;
+    }
+
+
+    /* 合作伙伴 */
+    #product {
+        height: 1050px;
+    }
+
+    #productMain {
+        height: 900px;
+    }
+
+    .productMainContent {
+        width: 230px;
+    }
+
+    /* 关于我们页面 */
+    #aboutListMain {
+        width: 85%;
+    }
+
+    /* 合作伙伴页面 */
+    .productListContent {
+        width: 22%;
+    }
+
+    /* 联系我们页面 */
+    #contact {
+        height: 1000px;
+    }
+
+    #contactRight {
+        width: 100%;
+        float: none;
+    }
+
+    #contactLeft {
+        width: 100%;
+        float: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .boxMain {
+        width: 98%;
+    }
+
+    .floorhd_tit {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    /* 导航栏 */
+    #headerMain {
+        width: 100%;
+    }
+
+    #headerMain_logo {
+        width: 70%;
+    }
+
+    #headerMain_nav {
+        width: 100%;
+        float: none;
+        position: absolute;
+        top: 70px;
+        z-index: 100;
+        background-color: #fff;
+        padding-bottom: 20px;
+        display: none;
+    }
+
+    #headerMain_nav div {
+        width: 90%;
+        float: none;
+        border-bottom: 1px dotted #303030;
+        margin: auto;
+    }
+
+    #headerMain_open {
+        display: block;
+    }
+
+    /* 关于我们 */
+    #about {
+        height: 750px;
+    }
+
+    .aboutImg {
+        width: 100%;
+        height: 200px;
+        margin: 10px 0;
+    }
+
+    .aboutText {
+        width: 100%;
+        height: 500px;
+    }
+
+    .aboutText_text {
+        height: 330px;
+        margin: 10px 0;
+    }
+
+
+    /* 优秀案例 */
+    #case {
+        height: auto;
+    }
+
+    #case_nav_list {
+        display: none;
+    }
+
+    #case_nav {
+        height: 300px;
+    }
+
+    #case_nav_con {
+        width: 100%;
+        height: 300px;
+        /* overflow: auto; */
+    }
+
+    .case_nav_list {
+        width: 50%;
+        height: 60px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .case_nav_list a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .caseMainContent {
+        width: 99%;
+        margin: 5px 0px;
+    }
+
+
+    /* 设计团队 */
+    #job {
+        height: 2300px;
+    }
+
+    .jobMainContent {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+
+
+    /* 合作伙伴 */
+    #product {
+        height: 950px;
+    }
+
+    #productMain {
+        height: 770px;
+    }
+
+    .productMainContent {
+        width: 31%;
+        margin: 1%;
+    }
+
+    .productMainContent img {
+        height: 100px;
+    }
+
+    /* 页脚 */
+    .footer_navber {
+        width: 100%;
+        height: 300px;
+        border-bottom: #ccc 1px solid;
+    }
+
+    .footer_navber div {
+        width: 50%;
+        height: 70px;
+    }
+
+    /* 关于我们页面 */
+    #aboutListMain {
+        width: 85%;
+    }
+
+
+
+    /* 合作伙伴页面 */
+    .productListContent {
+        width: 22%;
+    }
+
+
+
+
+
+
+
+
+
+    /* 联系我们页面 */
+    #contact {
+        height: 1000px;
+    }
+
+    #contactRight {
+        width: 100%;
+        float: none;
+    }
+
+    #contactLeft {
+        width: 100%;
+        float: none;
+    }
+
+    .contarctRightCon {
+        overflow: auto;
+    }
+
+
+
+
+    .page-status {
+        display: none;
+    }
+
+
+
+
+
+    /* 团队展示页面子页面 */
+    #jobMainImg {
+        width: 100%;
+        float: none;
+    }
+
+    #jobMainCon {
+        width: 100%;
+        float: none;
+    }
+
+
+
+
+    #caseMainLeft {
+        width: 100%;
+    }
+
+    #caseMainRight {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .caseMainLeftImg button {
+        width: 48%;
+    }
+}

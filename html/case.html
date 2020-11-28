@@ -1,0 +1,89 @@
+{include file=header.html}
+
+{include file=position.html}
+{include file=navigation.html}
+
+<div id="caseList">
+    <div id="aboutListMain">
+        <div class="floorhd_tit">
+            {content:title}
+        </div>
+        <div id="caseMain">
+            <div id="caseMainLeft">
+                <div class="caseMainLeftImg">
+                    <div id="caseMainMaxImg"><img src="{content:ico}" alt=""></div>
+                    <button id="caseForwardBut">》</button>
+                    <button id="caseBackwardBut">《</button>
+                </div>
+                <div class="caseMainLeftMinImg">
+                    <ul id="caseMainLeftMinImgUl">
+                        {pboot:pics id={content:id}}
+                        <li class="caseMainLeftMinImgLi"><img src="[pics:src]" alt=""></li>
+                        {/pboot:pics}
+                    </ul>
+                </div>
+            </div>
+
+            <script>
+                var caseMainLeftMinImgUl = document.getElementById("caseMainLeftMinImgUl");
+                var caseMainLeftMinImgLi = document.getElementsByClassName("caseMainLeftMinImgLi");
+
+                var caseMainMaxImg = document.getElementById("caseMainMaxImg");
+
+                var caseForwardBut = document.getElementById("caseForwardBut");
+                var caseBackwardBut = document.getElementById("caseBackwardBut");
+
+                // 展示小图ul的长度
+                var caseMainLeftMinImgUlWidth = caseMainLeftMinImgLi.length * 180;
+                caseMainLeftMinImgUl.style.width = caseMainLeftMinImgUlWidth + 'px';
+
+
+
+                // 点击小图切换大图
+                for (var i = 0; i < caseMainLeftMinImgLi.length; i++) {
+                    caseMainLeftMinImgLi[i].onclick = function () {
+                        caseMainMaxImg.innerHTML = this.innerHTML;
+                    }
+                }
+
+                var imgIndex = 0;
+                // 下一张按钮
+                caseForwardBut.onclick = function CFB() {
+                    if (imgIndex < caseMainLeftMinImgLi.length) {
+                        caseMainMaxImg.innerHTML = caseMainLeftMinImgLi[imgIndex].innerHTML;
+                        imgIndex++;
+                    } else {
+                        imgIndex = 0;
+                    }
+                }
+
+                // 上一张按钮
+                caseBackwardBut.onclick = function () {
+                    if (imgIndex < caseMainLeftMinImgLi.length && imgIndex != 0) {
+                        caseMainMaxImg.innerHTML = caseMainLeftMinImgLi[imgIndex].innerHTML;
+                        imgIndex--;
+                    } else if (imgIndex === 0) {
+                        caseMainMaxImg.innerHTML = caseMainLeftMinImgLi[0].innerHTML;
+                        imgIndex = caseMainLeftMinImgLi.length - 1;
+                    }
+                }
+            </script>
+
+
+
+
+            <div id="caseMainRight">
+                <div class="caseMainRight_h1">
+                    <span><span>{content:title}</span>主干设计师：{content:ext_MainDesigner}</span>
+                </div>
+                <div class="caseMainRight_h5">案例面积：{content:ext_area}平方米</div>
+                <div class="caseMainRight_h5">装修风格：{content:ext_CaseStyle}</div>
+                <div class="caseMainRight_h5">施工周期：{content:ext_period}天</div>
+                <div class="caseMainRight_h5">案例区域：{content:ext_region}</div>
+                <div class="caseMainRight_h5">案例心得：{content:ext_Experience}</div>
+            </div>
+        </div>
+    </div>
+</div>
+{include file=precon.html}
+{include file=footer.html}

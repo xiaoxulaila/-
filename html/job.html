@@ -1,0 +1,30 @@
+{include file=header.html}
+{include file=bannerMain.html}
+{include file=position.html}
+{include file=navigation.html}
+
+<div class="box">
+    <div class="boxMain">
+        <div class="job">
+            <div class="floorhd_tit">
+                {content:title}
+            </div>
+            <div class="jobMain">
+                <div id="jobMainImg">
+                    <img src="{content:ico}" alt="{content:title}" title="{content:title}">
+                </div>
+                <div id="jobMainCon">
+                    <div class="jobMainConTop"><span>{content:title}</span>{content:ext_Grade}</div>
+                    <div class="jobMainConCon"><span>从业经历：</span>{content:ext_WorkingExperience}年</div>
+                    <div class="jobMainConCon"><span>案例作品：</span>{content:ext_NumberWorks}套</div>
+                    <div class="jobMainConCon"><span>擅长风格：</span>{content:ext_style}</div>
+                    <div class="jobMainConCon"><span>所在店面：</span>{content:ext_Store}</div>
+                    <div class="jobMainConCon"><span>店面地址：</span>{content:ext_storeAddress}</div>
+                    <div class="jobMainConCon"><span>设计理念：</span>{content:ext_DesignConcept}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{include file=precon.html}
+{include file=footer.html}
