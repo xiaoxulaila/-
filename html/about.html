@@ -1,0 +1,78 @@
+{include file=nav.html} {include file=sidelight.html}
+<div id="base">
+    <div id="baseMainRight">
+        <div class="baseMRNav">
+            <div class="BMRNav">关于枫雅</div>
+            <div class="BMRNavH4">ABOUT FENGYA</div>
+            <div class="aaa">
+                {pboot:nav parent={sort:tcode}}
+                <a href="[nav:link]" class="navclass {pboot:if([nav:scode]=={sort:scode})} navactive {/pboot:if}">
+                    <div class="baseMRNavder">[nav:name]</div>
+                </a>
+                {/pboot:nav}
+            </div>
+        </div>
+
+        <div class="baseMRNew" style="background-color: white;padding-bottom: 20px; height: auto;margin-top: 40px;">
+            {pboot:content scode=6}
+            <div id="aboutTitleB" style="width: 100%;">[content:title]</div>
+            <div id="aboutTitleC" style="width: 100%;">——</div>
+
+            <div class="aboutText">
+                [content:content]
+            </div>
+            {/pboot:content}
+        </div>
+
+
+
+<!-- 
+        {pboot:nav parent={sort:tcode} num=2}
+        <div class="baseMRNew" style="background-color: white;padding-bottom: 20px; height: auto;margin-top: 40px;">
+            {pboot:content scode=[nav:scode]}
+            <div id="aboutTitleB" style="width: 100%;">[content:title]</div>
+            <div id="aboutTitleC" style="width: 100%;">——</div>
+
+            <div class="aboutText">
+                [content:content]
+            </div>
+            {/pboot:content}
+        </div>
+        {/pboot:nav}
+
+        <div class="baseMRNew">
+            <div id="newTitle">
+                <div id="newTitleA">关于枫雅</div>
+                <div id="newTitleB">ABOUT FENGYA</div>
+                <div id="newTitleC">——</div>
+            </div>
+            {pboot:list scode=35 num=9999}
+            <a href="[list:link]">
+                <div class="CMain">
+                    <div class="caseImg"><img src="[list:ico]" alt=""></div>
+                    <div class="caseH1">[list:title]</div>
+                </div>
+            </a>
+            {/pboot:list}
+
+        </div>
+
+        {pboot:nav parent={sort:tcode}} {pboot:if([nav:n]>2)}
+        <div class="baseMRNew" style="background-color: white;padding-bottom: 20px; height: auto;margin-top: 40px;">
+            {pboot:content scode=[nav:scode]}
+            <div id="aboutTitleB" style="width: 100%;">[content:title]</div>
+            <div id="aboutTitleC" style="width: 100%;">——</div>
+
+            <div class="aboutText">
+                [content:content]
+            </div>
+            {/pboot:content}
+        </div>
+        {/pboot:if} {/pboot:nav}
+    </div> -->
+
+</div>
+
+
+
+{include file=footer.html}

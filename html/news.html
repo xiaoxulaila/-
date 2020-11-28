@@ -1,0 +1,37 @@
+    {include file=nav.html} {include file=sidelight.html}
+    <div id="base">
+        <div id="baseMainRight">
+            <div class="baseMRNav">
+                <div class="BMRNav">新闻资讯</div>
+                <div class="BMRNavH4">NEWS INEORMATION</div>
+                <div class="aaa">
+                    {pboot:nav parent={sort:tcode}}
+
+                    <a href="[nav:link]" class="navclass {pboot:if([nav:scode]=={sort:scode})} activeq {/pboot:if}">
+                        <div class="baseMRNavder">[nav:name]</div>
+                    </a>
+
+                    {/pboot:nav}
+                </div>
+            </div>
+
+
+            <div class="baseMRNew">
+                {pboot:list num=12}
+                <a href="[list:link]">
+                    <div class="baseMRN">
+                        <div class="baseMRNImg"><img src="[list:ico]" alt=""></div>
+                        <div class="baseMRNH1">[list:title]</div>
+                        <div class="baseMRNH5">[list:subtitle]</div>
+                    </div>
+                </a>
+                {/pboot:list}
+            </div>
+            <div id="newsPage">
+                {page:bar}
+            </div>
+        </div>
+    </div>
+
+    </div>
+    {include file=footer.html}

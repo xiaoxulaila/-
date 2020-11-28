@@ -1,0 +1,32 @@
+    {include file=navv.html} {include file=fanhui.html} {include file=mbx.html}
+    <div id="abc">
+        <div id="abcMain">
+            <div class="ABCMM">
+                <div id="abcH1">{content:title}</div>
+                <div id="adcT">作者：{content:author} 发表日期：{content:date}</div>
+
+
+            </div>
+            <div class="bshare-custom" style="text-align: right;">
+                <span>分享到：</span>
+                <div class="bsPromo bsPromo2"></div>
+                <a title="分享到QQ空间" class="bshare-qzone"></a>
+                <a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+                <a title="分享到人人网" class="bshare-renren"></a>
+                <a title="分享到微信" class="bshare-weixin" href="javascript:void(0);"></a>
+                <a title="分享到QQ好友" class="bshare-qqim" href="javascript:void(0);"></a>
+            </div>
+
+
+
+            <script type="text/javascript" charset="utf-8"
+                src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+            <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+            <div id="abcC">{content:content}</div>
+            <div id="abcAA">上一页：{content:precontent}<br> 下一页：{content:nextcontent}
+            </div>
+        </div>
+
+    </div>
+    </div>
+    {include file=footer.html}
